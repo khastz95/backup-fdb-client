@@ -1,0 +1,6 @@
+; Copie para ftp-nativo.ini ao lado do PainelMonitor.exe
+; Host e porta do SEU servidor FTP (versao 2). Sem senha neste arquivo.
+
+[Servidor]
+Host=ftp.seudominio.com
+Port=9099

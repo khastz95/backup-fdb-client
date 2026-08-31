@@ -1,0 +1,42 @@
+; Copie este arquivo para config.ini e preencha os dados do cliente.
+; Nao envie o config.ini preenchido para o GitHub.
+
+[Cliente]
+CNPJ=00000000000000
+Codigo=00000000000000
+Nome=Nome da Empresa
+
+[Firebird]
+GbakPath=C:\Program Files\Firebird\Firebird_3_0
+Database=C:\GDI\Dados\GDI.FDB
+User=SYSDBA
+Password=TROQUE_A_SENHA_DO_BANCO
+Host=localhost
+Port=3050
+
+[Backup]
+LocalFolder=C:\GDI\Dados\Backup Local
+Compactar=0
+DiasEntreFull=4
+ManterCadeias=3
+EnviarFtp=1
+
+[FTP]
+Host=ftp.seudominio.com
+Port=9099
+User=backupclientes
+Password=TROQUE_A_SENHA_FTP
+PastaRemota=E:/Backup2
+UsePassive=1
+SkipPasvIp=1
+UseFTPS=0
+TimeoutSegundos=3600
+Tentativas=3
+
+[Agendamento]
+Hora=23:00
+NomeTarefa=Backup Firebird Cliente
+
+[Seguranca]
+; Senha para sair da bandeja, remover servico e limpar copias
+SenhaOperacao=TROQUE_ESTA_SENHA

@@ -1,0 +1,39 @@
+# Arquivos gerados e dados locais
+*.exe
+*.pdb
+*.mdb
+*.user
+*.suo
+.vs/
+bin/
+obj/
+
+# Configuracoes reais (nunca publicar senhas)
+config.ini
+servidor/servidor-ftp.ini
+servidor/sqlite.db
+servidor/x64/
+servidor/x86/
+servidor/System.Data.SQLite.dll
+servidor/FtpUsers.exe
+painel-monitor/config-painel.ini
+painel-monitor/ftp-nativo.ini
+painel-monitor/PainelMonitor.exe
+
+# Logs, backups e bancos
+logs/
+*.log
+*.nbk
+*.fdb
+*.gdb
+nbackup-state.json
+status.json
+
+# Sistema
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.rar
+*.zip
+*.7z

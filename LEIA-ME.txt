@@ -1,0 +1,10 @@
+Backup Firebird 3.0 + envio FTP
+================================
+
+A documentacao completa esta no README.md
+(como configurar, o que nao enviar ao GitHub e como restaurar).
+
+Modelos sem senha:
+  config.ini.example
+  servidor\servidor-ftp.ini.example
+  painel-monitor\ftp-nativo.ini.example

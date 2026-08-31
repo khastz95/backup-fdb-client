@@ -1,0 +1,10 @@
+; Copie para config-painel.ini se quiser gravar e-mail da conta.
+; Nao envie este arquivo preenchido. O painel tambem cria o arquivo ao entrar.
+
+[Conta]
+Email=
+Password=
+TimeoutSegundos=3600
+
+[Local]
+PastaLocal=

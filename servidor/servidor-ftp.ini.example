@@ -1,0 +1,25 @@
+; Copie este arquivo para servidor-ftp.ini no computador do SERVIDOR.
+; Nao envie o servidor-ftp.ini preenchido para o GitHub.
+; A porta 9000 pode ficar com um FTP antigo. Este servico usa 9099.
+
+[Servidor]
+Pasta=E:\Backup2
+Porta=9099
+PassivaInicio=50200
+PassivaFim=50300
+IpPublico=127.0.0.1
+
+[Retencao]
+Completos=1
+Incrementais=6
+
+[Usuario]
+; Conta de ENVIO usada pelos programas dos clientes (XSTOR)
+Login=backupclientes
+Senha=TROQUE_A_SENHA_FTP
+
+[Superuser]
+; Primeiro administrador do sqlite.db (download do painel)
+; Se a senha contiver a palavra TROQUE, o programa nao cria o usuario sozinho.
+Email=admin@seudominio.com
+Senha=TROQUE_A_SENHA_SUPERUSER
