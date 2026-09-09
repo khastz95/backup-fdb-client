@@ -5,8 +5,13 @@
 *.user
 *.suo
 .vs/
+.idea/
+.vscode/
+*.userprefs
+*.rsuser
 bin/
 obj/
+artifacts/
 
 # Configuracoes reais (nunca publicar senhas)
 config.ini

@@ -1,34 +1,29 @@
 # Seguranca
 
-Este projeto lida com copias de banco de dados. Trate senhas e o `sqlite.db` como segredo.
+Este software trata **copias de banco de dados**. Senhas, `sqlite.db` e arquivos `.nbk` / `.fdb` sao segredo.
 
-## Nunca publique
+## Como reportar
+
+Nao abra issue publico para vazamento de credencial ou falha de autenticacao.
+
+1. Use [Security advisories](https://github.com/khastz95/backup-fdb-client/security/advisories/new), ou
+2. Escreva para **alfa@alfaautomacao.com.br**
+
+Descreva o impacto e como reproduzir, **sem** anexar bancos reais.
+
+## Nunca publique no Git
 
 - `config.ini`
 - `servidor/servidor-ftp.ini`
 - `servidor/sqlite.db`
 - `painel-monitor/config-painel.ini`
-- `painel-monitor/ftp-nativo.ini` (pode ter o host interno; o exemplo e publico)
-- logs e arquivos `.nbk` / `.fdb`
+- `painel-monitor/ftp-nativo.ini`
+- logs e backups
 
-Use os arquivos `*.example`.
+Use sempre os `*.example`.
 
-## O que o publico clona
+## Releases
 
-Codigo-fonte, scripts de build, DLLs do SQLite em `servidor/lib/` e modelos de configuracao **sem senha real**.
+Os `.exe` do [Release](https://github.com/khastz95/backup-fdb-client/releases) nao devem carregar senha de FTP. O cliente le `config.ini` local; o painel valida e-mail no `sqlite.db` do servidor.
 
-## Senhas deste computador
-
-Se este repositorio ficar publico e alguma senha ja tiver estado no codigo ou em um `ini` versionado:
-
-1. Troque a senha do FTP de envio no servidor e nos clientes.
-2. Troque a senha do superuser (`gerenciar-usuarios.bat`).
-3. Revise SYSDBA se o `config.ini` de teste foi compartilhado.
-
-O GitHub guarda o historico. Apagar o arquivo depois **nao** remove a senha dos commits antigos.
-
-## Como enviar um exe para download
-
-1. Compile na sua maquina com os `ini` locais (que nao vao no git).
-2. No GitHub: **Releases** → novo release → anexe `BackupFdbCliente.exe` e `PainelMonitor.exe`.
-3. Nao coloque senha de FTP no painel. O painel valida e-mail + senha do `sqlite.db`.
+Se uma senha entrou em um commit, **troque-a**. O historico do GitHub nao some ao apagar o arquivo depois.

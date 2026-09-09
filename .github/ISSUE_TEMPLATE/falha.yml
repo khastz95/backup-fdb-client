@@ -1,0 +1,49 @@
+name: Falha
+description: Algo nao funciona como esperado
+title: "[Falha] "
+labels: ["falha"]
+body:
+  - type: markdown
+    attributes:
+      value: Antes de abrir, confirme que usou os arquivos `*.example` e que nenhuma senha foi colada aqui.
+  - type: dropdown
+    id: componente
+    attributes:
+      label: Componente
+      options:
+        - Cliente (BackupFdbCliente)
+        - Servidor FTP
+        - Painel do representante
+        - Montagem do .fdb
+        - Documentacao / outro
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que deveria acontecer
+    validations:
+      required: true
+  - type: textarea
+    id: atual
+    attributes:
+      label: O que aconteceu
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como reproduzir
+      placeholder: 1. ...
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows
+      placeholder: "10 / 11"
+  - type: textarea
+    id: logs
+    attributes:
+      label: Trecho de log (sem senha)
+      render: text

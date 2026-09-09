@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentacao
+    url: https://github.com/khastz95/backup-fdb-client#readme
+    about: Como instalar o cliente, o servidor FTP e o painel.
+  - name: Reportar vulnerabilidade
+    url: https://github.com/khastz95/backup-fdb-client/security/advisories/new
+    about: Nao abra issue publico para senhas, vazamento ou falha de autenticacao.

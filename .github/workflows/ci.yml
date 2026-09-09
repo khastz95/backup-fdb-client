@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Compilar no Windows
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compilar cliente, painel e FtpUsers
+        shell: cmd
+        run: build.bat
+
+      - name: Enviar artefatos
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-exes
+          path: |
+            BackupFdbCliente.exe
+            painel-monitor/PainelMonitor.exe
+            servidor/FtpUsers.exe
+          if-no-files-found: error
