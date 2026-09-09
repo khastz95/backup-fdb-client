@@ -64,10 +64,6 @@ docs/                guias
 config.ini.example   modelo do cliente (sem senha)
 ```
 
-## Contribuir
-
-Veja [CONTRIBUTING.md](CONTRIBUTING.md) e o [codigo de conduta](CODE_OF_CONDUCT.md). Historico de versoes: [CHANGELOG.md](CHANGELOG.md).
-
 ## Licenca
 
-[MIT](LICENSE) © 2026 Alfa Automacao
+[MIT](LICENSE) © 2026 Alfa Automacao. Historico de versoes: [CHANGELOG.md](CHANGELOG.md).
