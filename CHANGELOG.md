@@ -3,6 +3,13 @@
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
 Versionamento aproximado de [SemVer](https://semver.org/lang/pt-BR/).
 
+## [Nao publicado]
+
+### Adicionado
+
+- Passo a passo de configuracao so local ou com FTP (`docs/configuracao.md`)
+- Download do projeto com um comando PowerShell (`install.ps1`)
+
 ## [1.0.0] - 2026-08-31
 
 ### Adicionado

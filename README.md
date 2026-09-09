@@ -7,7 +7,9 @@
 
 Copia de seguranca do banco **Firebird 3.0** no PC do cliente (`nbackup`: completo + incremental), arquivo local e envio a um FTP central. O representante acompanha os CNPJs pelo painel, baixa a cadeia e pode montar um `.fdb`.
 
-**Download:** [Releases](https://github.com/khastz95/backup-fdb-client/releases/latest) · **Senhas:** nunca entram neste Git ([SECURITY.md](SECURITY.md))
+**Download:** um comando no PowerShell — [docs/download.md](docs/download.md) · [Releases](https://github.com/khastz95/backup-fdb-client/releases/latest)
+
+**Configurar:** [passo a passo](docs/configuracao.md) — **somente neste PC** ou **neste PC + FTP**. Modelos `*.example` so; nada de copiar `config.ini` de teste de outra maquina.
 
 ## Como encaixa
 
@@ -28,20 +30,18 @@ A porta **9000** pode continuar com um FTP antigo. Este servico usa **9099** e p
 
 ## Inicio rapido
 
-Requisitos: Windows 10/11, [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48), Firebird 3.0 onde for gerar ou montar `.fdb`.
+```powershell
+irm https://raw.githubusercontent.com/khastz95/backup-fdb-client/main/install.ps1 | iex
+```
+
+Isso baixa o codigo e os `.exe` do Release. Depois abra `docs\configuracao.md` no projeto (modo local ou FTP).
+
+Para so clonar e compilar: Windows 10/11, [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48), Firebird 3.0 onde for gerar ou montar `.fdb`.
 
 ```bat
 git clone https://github.com/khastz95/backup-fdb-client.git
 cd backup-fdb-client
 build.bat
-```
-
-Depois copie os exemplos e preencha **so na sua maquina**:
-
-```bat
-copy config.ini.example config.ini
-copy servidor\servidor-ftp.ini.example servidor\servidor-ftp.ini
-copy painel-monitor\ftp-nativo.ini.example painel-monitor\ftp-nativo.ini
 ```
 
 | Atalho | Faz |
@@ -51,7 +51,7 @@ copy painel-monitor\ftp-nativo.ini.example painel-monitor\ftp-nativo.ini
 | `abrir-painel.bat` | Abre o painel do **representante** |
 | `servidor\iniciar-ftp.bat` | Sobe o FTP (deixe a janela aberta) |
 
-Guias: [cliente](docs/cliente.md) · [servidor](docs/servidor.md) · [painel](docs/painel.md) · [restaurar](docs/restaurar.md)
+Guias: [configuracao](docs/configuracao.md) · [download](docs/download.md) · [cliente](docs/cliente.md) · [servidor](docs/servidor.md) · [painel](docs/painel.md) · [restaurar](docs/restaurar.md)
 
 ## Repositorio
 

@@ -19,7 +19,8 @@ LocalFolder=C:\GDI\Dados\Backup Local
 Compactar=0
 DiasEntreFull=4
 ManterCadeias=3
-EnviarFtp=1
+; Destino: 0 = somente neste PC; 1 = neste PC e no servidor FTP
+EnviarFtp=0
 
 [FTP]
 Host=ftp.seudominio.com

@@ -1,6 +1,6 @@
 # Servidor FTP
 
-Rode na **maquina do servidor**, nao no cliente. A porta **9000** pode ficar com um FTP antigo; este servico usa **9099**.
+**Passo a passo completo** (so neste PC ou com FTP): [configuracao.md](configuracao.md). Os `*.example` sao modelos; configs de teste na maquina de quem desenvolve **nao** entram no Git.
 
 ## Configurar
 
